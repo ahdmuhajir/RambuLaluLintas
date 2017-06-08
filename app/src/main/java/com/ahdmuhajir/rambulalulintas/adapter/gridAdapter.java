@@ -119,7 +119,7 @@ public class gridAdapter extends BaseAdapter {
 
         }else if(names.get(position).toString().equals("PERINTAH"))
         {
-            imageView.setImageResource(R.drawable.perintah);
+            imageView.setImageResource(R.drawable.perintahr05);
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

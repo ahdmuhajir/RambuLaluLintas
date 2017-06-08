@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".semua"/>
+        <activity android:name=".semua" />
+        <activity android:name=".larangan" />
+        <activity android:name=".peringatan" />
+        <activity android:name=".perintah" />
+        <activity android:name=".petunjuk" />
+        <activity android:name=".tambahan" />
+        <activity android:name=".dialogg"></activity>
     </application>
 
 </manifest>

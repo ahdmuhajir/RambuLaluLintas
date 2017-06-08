@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
 import com.ahdmuhajir.rambulalulintas.adapter.gridAdapter;
-import com.ahdmuhajir.rambulalulintas.database.DatabaseHelper;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,12 +11,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> basicFields;
     gridAdapter adapter;
     GridView gridView;
-    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        databaseHelper = new DatabaseHelper(this);
         basicFields = new ArrayList<>();
         basicFields.add("SEMUA");
         basicFields.add("LARANGAN");
