@@ -24,7 +24,6 @@ public class listAdapter extends ArrayAdapter<String> {
         this.context = context;
         this.desc = desc;
         this.imageId = imageId;
-
     }
     @Override
     public View getView(int position, View view, ViewGroup parent) {
