@@ -18,8 +18,7 @@ public class listAdapter extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] desc;
     private final Integer[] imageId;
-    public listAdapter(Activity context,
-                      String[] desc, Integer[] imageId) {
+    public listAdapter(Activity context, String[] desc, Integer[] imageId) {
         super(context, R.layout.item_list_rambu, desc);
         this.context = context;
         this.desc = desc;
