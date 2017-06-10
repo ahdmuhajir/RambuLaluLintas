@@ -30,9 +30,14 @@ public class listAdapter extends ArrayAdapter<String> {
         View rowView= inflater.inflate(R.layout.item_list_rambu, null, true);
         TextView txtTitle = (TextView) rowView.findViewById(R.id.artist);
 
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.list_image
-        );
-        txtTitle.setText(desc[position]);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.list_image);
+        if (desc[position].length()<50){
+            txtTitle.setText(desc[position]);
+        }else {
+            String zz=desc[position].substring(1,50)+"...";
+            txtTitle.setText(zz);
+        }
+
         imageView.setImageResource(imageId[position]);
         return rowView;
     }

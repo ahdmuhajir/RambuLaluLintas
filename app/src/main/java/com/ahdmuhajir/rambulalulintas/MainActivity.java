@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         basicFields = new ArrayList<>();
-        basicFields.add("SEMUA");
+        //basicFields.add("SEMUA");
         basicFields.add("LARANGAN");
         basicFields.add("PERINTAH");
         basicFields.add("PERINGATAN");
